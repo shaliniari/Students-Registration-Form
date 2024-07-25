@@ -1,0 +1,144 @@
+ /* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* colors */
+:root {
+    --bg-gradinet: linear-gradient(to right, #3494e6, #ec6ead);
+    --font-color: #fff;
+    --bg-form: rgba(255, 255, 255, 0.2);
+    --bg-shadow-form: rgba(31, 38, 135, 0.37);
+    --form-border: rgba(255, 255, 255, 0.18);
+    --btn-submit-bg: linear-gradient(to right, #2fd95d, #38ef7d);
+    --btn-reset-bg: linear-gradient(to right, #2998e2, #85bbd6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-gradinet);
+    color: var(--font-color);
+}
+
+/* nav bar */
+.dropdown{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+a{
+    display: block;
+    width: 232.9px;
+     color:#fff;
+     padding: 12px 0;
+     font-size: 1.4rem;
+     text-decoration: none;
+     text-align: center;
+     transition: 1s;
+}
+a:hover{
+    background-color:#fff;
+    color: rgb(24, 23, 23);
+}
+.student,.staff{
+    display: none;
+    list-style-type: none;
+}
+.dropdown li:nth-child(2):hover .student{
+    display: block;
+}
+.dropdown li:nth-child(3):hover .staff{
+    display: block;
+}
+
+form {
+    padding: 30px 30px 20px 30px;
+    margin: 50px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 var(--bg-shadow-form);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid var(--form-border);
+}
+
+::placeholder {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(152, 152, 152);
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    word-spacing: 8px;
+}
+p{
+    display: inline;
+    cursor: pointer;
+    color: #2998e2;
+}
+
+input {
+    margin-bottom: 8px;
+}
+label {
+    font-weight: 600;
+}
+
+input,
+textarea {
+    padding: 3px;
+    border: 0.9px solid lightgray;
+}
+
+table,
+th,
+td {
+    padding: 7px;
+    border-collapse: collapse;
+    border-bottom: 1px solid silver;
+}
+
+.btn-section {
+    display: flex;
+    justify-content: center;
+}
+
+#btn-submit {
+    background: var(--btn-submit-bg);
+}
+
+#btn-reset {
+    background: var(--btn-reset-bg);
+}
+
+.btn {
+    color: var(--font-color);
+    font-weight: 600;
+    margin-top: 20px;
+    width: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-section .btn:nth-of-type(2) {
+    margin-left: 20px;
+}
+
+.demo {
+    width: 135px;
+}
+
+/* shortcuticon */
+.shortcuticon{
+    color: #fff;
+}
+

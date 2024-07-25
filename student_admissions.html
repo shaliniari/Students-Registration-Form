@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./Assets/Css/style.css">
+    <!-- Icon -->
+    <link rel="icon" href="./Assets/Img/Icons.png" type="image/png">
+</head>
+<body>
+<!-- Student Admission Form -->
+<form action="#">
+    <h2>Student Admission</h2>
+    <label for="student-name">Name :</label><br>
+    <input type="text" required id="student-name" name="student-name" placeholder="Enter your name" minlength="3"
+        maxlength="25"  title="enter your name"><br>
+    <label for="student-email">Email :</label><br>
+    <input type="email" name="student-email" id="student-email" placeholder="example@gmail.com" required title="enter your mail"><br>
+    <label for="student-phone">Mobile Number :</label><br>
+    <input type="tel" name="student-phone" id="student-phone" placeholder="Your Mobile Number"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" title="enter your mobile no" required><br>
+    <!-- gender section -->
+    <div class="student-gender">
+        <label for="male">Gender :</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="others" name="gender" value="others" required>
+        <label for="others">Others</label>
+    </div>
+    <label for="student-dob">Date of birth :</label><br>
+    <input type="date" id="student-dob" name="student-dob" title="Date of birth" required><br>
+    <label for="student-city">City :</label><br>
+    <input type="text" id="student-city" placeholder="Enter your city" title="enter your city" required><br>
+    <label for="student-pincode">Pincode :</label><br>
+    <input type="tel" id="student-pincode" placeholder="Enter city pincode" title="enter your city pincode" maxlength="6" required><br>
+
+    <label for="student-state">State :</label><br>
+    <select name="student-state" id="student-state">
+        <option value="Tamilnadu">Tamilnadu</option>
+        <option value="Kerala">Kerala</option>
+        <option value="Goa">Goa</option>
+        <option value="Karnataka">Karnataka</option>
+        <option value="Andhra pradesh">Andhra pradesh</option>
+        <option value="Uttara Pradesh">Uttara Pradesh</option>
+        <option value="Telangana">Telangana</option>
+        <option value="Bihar">Bihar</option>
+    </select><br>
+    <label for="student-country">Country :</label><br>
+    <input type="text" name="student-country" id="student-country" placeholder="Enter your country"
+        value="India"><br>
+
+    <!-- student Qualification -->
+    <label for="student-qualification">Qualification :</label>
+    <table>
+        <tr>
+            <th>Examination</th>
+            <th>Board</th>
+            <th>Percentage</th>
+            <th>Year of Passing</th>
+        </tr>
+        <tr>
+            <th>Class XII</th>
+            <td><input type="text" id="student-qualification" class="stu-board" required title="which board"></td>
+            <td><input type="text" class="demo" title="academic Percentage" required></td>
+            <td><input type="month" class="demo" title="passed out year&month" required></td>
+        </tr>
+        <tr>
+            <th>Class X</th>
+            <td><input type="text" class="stu-board" title="which board" required></td>
+            <td><input type="text" class="demo"  title="academic Percentage" required></td>
+            <td><input type="month" class="demo"  title="passed out year&month" required></td>
+        </tr>
+        <tr>
+            <th>Degree</th>
+            <td><input type="text" class="stu-board" title="University Name" required></td>
+            <td><input type="text" class="demo"  title="academic Percentage" required></td>
+            <td><input type="month" class="demo" title="passed out year&month" required></td>
+        </tr>
+    </table>
+
+    <label for="student-course">Choose your course:</label><br>
+    <input list="student-courses" name="student-course" id="student-course" title="Choose your course">
+    <datalist id="student-courses">
+        <option value="Computer Science ">
+        <option value="Biology">
+        <option value="Bachelor of Commerce">
+        <option value="Electrical and Electronics Engineering">
+        <option value="Information Technology">
+    </datalist><br>
+
+    <label for="student-address">Address :</label><br>
+    <textarea name="student-address" id="student-address" cols="50" rows="5"
+        placeholder="Enter your Address" title="Type your Address"></textarea><br>
+    <input type="checkbox" name="student-checkbox" id="student-checkbox">
+    <label for="student-checkbox">I agree the <p href="" id="stucheck-box">terms and condition</p></label>
+
+    <div class="btn-section">
+        <input type="button" id="btn-submit" class="btn" value="Submit">
+        <input type="reset" id="btn-reset" class="btn" value="Reset">
+    </div>
+</form>
+</body>
+</html>
